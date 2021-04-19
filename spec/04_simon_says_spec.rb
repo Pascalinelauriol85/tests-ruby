@@ -75,6 +75,10 @@ describe "Simon says" do
       expect(titleize("war and peace")).to eq("War and Peace")
     end
 
+    it "doesn't capitalize 'little words' in a title" do
+      expect(titleize("bonjour ca va")).to eq("Bonjour ca va")
+    end
+
     it "does capitalize 'little words' at the start of a title" do
       expect(titleize("the bridge over the river kwai")).to eq("The Bridge Over the River Kwai")
     end

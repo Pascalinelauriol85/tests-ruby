@@ -15,3 +15,8 @@ describe "the greet function" do
     expect(greet("Bob")).to eq("Hello, Bob!")
   end
 end
+
+it "says hello to someone else" do
+  expect(greet("John")).to eq("Hello, John!")
+end
+end
